@@ -9,6 +9,7 @@ import 'mint-ui/lib/style.css'
 import axios from 'axios'
 import '../css/iconfont/iconfont.css'
 import {store} from './compontents/vuex/store'
+import 'default-passive-events'
 Vue.prototype.$axios = axios
 Vue.use(Router)
 Vue.use(MintUI)
