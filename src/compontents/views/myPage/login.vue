@@ -79,7 +79,7 @@ export default {
       }).then(res => {
         if(res.data.success === 1){
           alert('登录成功')
-          this.$store.commit('userName',userName)
+          this.$store.commit('userName',userName.substr(0,3)+'****'+userName.substr(7,4))
           this.$router.push(`/my?user=${res.config.params.userName}`)
         }else if(res.data.error === 1){
           alert('密码错误')

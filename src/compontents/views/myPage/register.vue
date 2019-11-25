@@ -93,7 +93,7 @@ export default {
           }else if (res.data.success === 1){
             alert("注册成功")
             this.$router.push(`/my?user=${res.data.userName}`)
-            this.$route.push()
+            this.$store.commit('userName',tel.substr(0,3)+'****'+tel.substr(7,4))
           }else{
             alert("服务端错误")
           }
